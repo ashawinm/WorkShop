@@ -78,8 +78,10 @@ input[type=text], select,input[type=password] {
   }
 
   .logo{
-      width: 100px;
-      height: 100px;
+      width: 95px;
+      height: 95px;
+      background-color: rgba(52, 52, 53, 0.767);
+      border-radius: 50%;
   }
 
   @media only screen and (max-width: 1000px) {

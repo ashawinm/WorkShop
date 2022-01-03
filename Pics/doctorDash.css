@@ -2,6 +2,7 @@ body{
     margin: 0;
     padding: 0;
     background-color: rgb(0, 0, 0);
+    font-family: Georgia, serif;
 }
 .main_body
 {
@@ -16,6 +17,13 @@ body{
     background-color: rgb(0 0 0 / 57%);
     position: fixed;
 }
+
+.contentBody
+{
+    display: flex;
+    height: 100%;
+}
+
 .sideBar{
     width: 8%;
     height: 100%;
@@ -25,8 +33,22 @@ body{
     transition-property: width;
     padding-top: 10%;
     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    display: inline-block;
+    
 }
 
+.fa-eye{
+    margin:10%;
+}
+
+.tableContainer{
+    justify-content: center;
+    align-items: center;
+    padding: 5% ;
+    padding-top: 10% ;
+    width: 100%;
+
+}
 .sideMenu{
     box-sizing: border-box;
     margin-top: 20%;
@@ -48,29 +70,38 @@ body{
 }
 .sideMenu a:hover{
 background-color: rgba(255, 255, 255, 0.199);
-color:rgb(0, 195, 255);
+color:rgb(0, 0, 0);
 }
 
-.sideBar:hover {
+.sideBar:hover
+{
     width: 20%;
+}
+
+.sideBar:hover .sideMenu a span{
+    display: inline-block;
+    margin-left: 10%;
 
 }
 
+.sideBar:hover .sideMenu .outPic{
+    display: none;
+}
 .menuSideBar i{
     color: #fff;
 }
 
 .logo
 {
-    height: 100px;
-    width: 100px;
+    height: 90px;
+    width: 90px;
     border-radius: 50%;
     background-color: #fff;
     margin: 20px;
     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
 }
 
-.fa{
+.outPic{
    font-size: 3vw !important;
 }
 
@@ -78,9 +109,44 @@ color:rgb(0, 195, 255);
     display: none;
 }
 
+span i{
+ margin-right:10px;
+}
 .sideMenu a{
     margin-top: 10%;
 }
+
+#table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  tr{
+      padding: 20%;
+  }
+  
+  #table td, #table th {
+    border: 1px solid #ddd;
+    padding: 15px;
+  }
+  
+  #table tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #table tr:hover {
+      background-color: #ddd;
+    
+    }
+  
+  #table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #777777;
+    color: white;
+  }
+
+
 
 @media only screen and (max-width: 900px) {
     .logo{
