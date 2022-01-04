@@ -93,7 +93,8 @@
                         <form>
                             <div class="row">
                                 <div class="col">
-                                    <input type="text" class="form-control" onfocusout="checkName('fname')" id="fname" placeholder="First name">
+                                    <input type="text" data-toggle="tooltip" data-placement="top" title="" class="form-control" onfocusout="checkName('fname')" id="fname" placeholder="First name">
+                                    <span class="text-danger d-none" style="font-size: smaller;">Error</span>
                                 </div>
                                 <div class="col">
                                     <input type="text" class="form-control" onfocusout="checkName('lname')" id='lname' placeholder="Last name">
